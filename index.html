@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viachaslau Kviat CV</title>
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__title">
+                    <h1 class="header__title-full">Vyacheslau Kviat CV</h1>
+                    <p class="header__name">Vyacheslau</p>
+                    <p class="header__surname">Kviat</p>
+                    <p class="header__specialty">Front-end Junior Dev</p>
+                </div>
+                <div class="header__description">
+                    <div class="header__description-about">
+                        <h2 class="header__description-title">About Me</h2>
+                        <p class="header__description-text">I have good interpersonal skills.<br>
+                            I am an excellent team worker and <br> willing to learn and develop new <br> skills. My
+                            strengths are <br>
+                            determination and diligence. <br>
+                            I really enjoy creating web<br> applications.
+                        </p>
+                    </div>
+                    <div class="header__description-photo">
+                        <img class="header__image" src="./img/Photo.png" alt="viachaslau kviat">
+                    </div>
+
+                </div>
+            </div>
+
+        </header>
+        <main class="main">
+            <section class="information">
+                <div class="container">
+                    <ul class="information__list">
+                        <li class="information__contacts inf-item">
+                            <h3 class="inf-item__title">Contacts</h3>
+                            <ul class="inf-item__list">
+                                <li class="inf-item__elem">Email: zubr1024@mail.ru</li>
+                                <li class="inf-item__elem">Location: Minsk,Belarus</li>
+                            </ul>
+                        </li>
+                        <li class="information__social inf-item">
+                            <h3 class="inf-item__title">Social</h3>
+                            <ul class="inf-item__list">
+                                <li class="inf-item__elem">GitHub: Kirakle</li>
+                                <li class="inf-item__elem">Telegram: @kv_yat</li>
+                            </ul>
+                        </li>
+
+                        <li class="information__experience inf-item">
+                            <h3 class="inf-item__title">Experience</h3>
+                            <p class="inf-item__description">Since 2019 until now,<br> Design Engineer (Civil Engineer)
+                            </p>
+                        </li>
+
+                        <li class="information__skills inf-item">
+                            <h3 class="inf-item__title">Skills</h3>
+                            <ul class="inf-item__list">
+                                <li class="inf-item__elem">HTML</li>
+                                <li class="inf-item__elem">CSS</li>
+                                <li class="inf-item__elem">JavaScript</li>
+                                <li class="inf-item__elem">React</li>
+                                <li class="inf-item__elem">Redux</li>
+                                <li class="inf-item__elem">Git</li>
+                            </ul>
+                        </li>
+
+                        <li class="information__education inf-item">
+                            <h3 class="inf-item__title">Education</h3>
+                            <ul class="inf-item__list">
+                                <li class="inf-item__elem"><span>University: </span>Belarusian National Technical
+                                    University,
+                                    (Civil Engineering major)</li>
+                                <li class="inf-item__elem"><span>Courses:</span>
+                                    <ul class="inf-item__elem-list">
+                                        <li class="inf-item__sub-item">
+                                            <a class="inf-item__link" href="https://www.youtube.com/c/itgid">ITGid -
+                                                JavaScript v2.0</a>
+                                        </li>
+                                        <li class="inf-item__sub-item">
+                                            <a class="inf-item__link" href="https://www.youtube.com/c/itgid">ITGid -
+                                                JavaScript Array Methods</a>
+                                        </li>
+                                        <li class="inf-item__sub-item">
+                                            <a class="inf-item__link" href="https://www.youtube.com/c/itgid">ITGid -
+                                                JavaScript Functions 2021</a>
+                                        </li>
+                                        <li class="inf-item__sub-item">
+                                            <a class="inf-item__link" href="https://www.youtube.com/c/itgid">ITGid -
+                                                OOP</a>
+                                        </li>
+                                        <li class="inf-item__sub-item">
+                                            <a class="inf-item__link" href="https://www.youtube.com/c/itgid">ITGid -
+                                                ReactJS</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+
+                        <li class="information__code-example inf-item">
+                            <h3 class="inf-item__title">Code Example</h3>
+                            <h4 class="information__code-example__title">CodeWars -Packing your backpack-</h4>
+                            <code class="information__code-example__code">
+                        function packBagpack(scores, weights, capacity) {<br>
+                            let thingsArr = weights.map((item, index) => {<br>
+                                return itemObj = {<br>
+                                    score: scores[index],<br>
+                                    weight: item,<br>
+                                    benefit: scores[index] / item,<br>
+                                };<br>
+                            }).sort((a, b) => b.benefit - a.benefit);<br>
+                            let maxBenefit = thingsArr.reduce((acc, item) => {<br>
+                                if ((acc.weight + item.weight) &lt;= capacity) {<br>
+                                    acc.weight += item.weight;<br>
+                                    acc.scores += item.score;<br>
+                                    return acc;<br>
+                                }<br>
+                                return acc;<br>
+                            }, { weight: 0, scores: 0 })<br>
+                            <br>
+                            return maxBenefit.scores;<br>
+                        }<br>
+                        
+                    </code>
+                            <img src="./img/logo.png" alt="viachaslau kviat logo" class="logo">
+                        </li>
+                    </ul>
+                </div>
+
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__content">
+                    <a class="my-github" href="https://github.com/Kirakle">
+                        <img class="github-icon" src="./img/svg/github.svg" alt="Github Icon" width="70" height="70">
+                        <p>Visit my GitHub</p>
+                    </a>
+                    <p>© 2022</p>
+                    <a href="https://rs.school/js/">
+                        <img src="./img/svg/rsschool.svg" alt="Rsschool Icon" width="140" height="50">
+                    </a>
+                </div>
+
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>
